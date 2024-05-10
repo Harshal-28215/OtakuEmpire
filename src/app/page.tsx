@@ -1,6 +1,7 @@
-// import naruto from '../../videos/naruto.mp4';
+import Videocontainer from "../component/videocontainer";
+ 
 
-import Videocontainer from "@/component/videocontainer";
+export const dynamic = 'force-dynamic'
 
 export default function Home() {
   return (

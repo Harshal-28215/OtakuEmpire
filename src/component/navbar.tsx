@@ -10,7 +10,7 @@ export default function Navbar() {
         <nav className="flex md:flex-row flex-col justify-between px-7 md:fixed top-0 left-0 bg-gray-700 text-white items-start md:items-center py-1 h-[58px] hover:h-[200px] transition-all md:hover:h-[58px] z-40 w-[100%]">
             <div className="flex items-center gap-2">
                 <Link href='/'>
-                    <Image className="rounded-full" src="/source/logo.jpg" alt="logo" width={50} height={50} />
+                    <Image className="rounded-full" src="/source/favicon.ico" alt="logo" width={50} height={50} />
                 </Link>
                 <Link className=" font-semibold text-xl" href='/'>OtakuEmapire</Link>
             </div>

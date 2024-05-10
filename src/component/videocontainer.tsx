@@ -4,9 +4,11 @@ import Handlevideo from './handlevideo';
 import { videocontainerSource } from './videocontainer-source';
 import Playsound_btn from './playsound-btn';
 
+
 export default function Videocontainer() {
 
-    const randomNumber = Math.floor(Math.random() * videocontainerSource.length)
+    let randomNumber = Math.floor(Math.random() * videocontainerSource.length)
+ 
 
     return (
         <main className="w-[100vw] h-[calc(100vh-50px)] relative overflow-hidden md:mt-[50px]">
