@@ -1,0 +1,9 @@
+.imageshadow{
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    background: transparent;
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+}
