@@ -20,7 +20,7 @@ export default async function Page({ params, searchParams }: CategoryProps) {
 
 
     return (
-        <main className="p-3 bg-gray-600 min-h-[100vh] w-full relative md:mt-[50px]">
+        <main className="p-3 bg-gray-600 min-h-[100vh] w-full relative">
 
             <div className="mb-8 pb-2 border-b border-white/65">
                 <h1 className="text-4xl font-bold text-white">

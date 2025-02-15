@@ -19,7 +19,7 @@ export default async function Page({params, searchParams}: AnimeinfoProps) {
     const animeinfo = await animeinfoapi(name, type);
     
     return (
-        <main className="bg-gray-700 min-h-[100vh] relative overflow-x-hidden md:mt-[50px]">
+        <main className="bg-gray-700 min-h-[100vh] relative overflow-x-hidden">
             <Animeinfo_banner animeinfo={animeinfo}/>
             <Animeinfo_descriprion animeinfo={animeinfo}/>
             <Animeinfo_recomended animeid={animeinfo.mal_id}/>
