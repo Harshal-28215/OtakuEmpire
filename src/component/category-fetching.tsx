@@ -1,20 +1,33 @@
 import { categorydata } from "@/utils/categoryapi";
 import Categorysection from "./categorysection";
-import { Category } from "@/utils/type_and_jsons";
 
 type CategoryProps = {
-        name: string;
+  id: string;
 }
 
-export default async function Category_fetching({name}: CategoryProps) {
+type category={
+  mal_id:string,
+  title:string,
+  type:string,
+  status:string,
+  episodes:number
+  images:{
+    webp:{
+      large_image_url:string
+    }
+  }
+}
 
-    const data = await categorydata(name);
+export default async function Category_fetching({ id }: CategoryProps) {
+
+  const data = await categorydata(id);
+  
 
   return (
-    <section className="flex flex-wrap gap-5 justify-center">
-                {data.map((category:Category) => (
-                    <Categorysection key={category.data_id} category={category} />
-                ))}
-            </section>
+    <section className="flex flex-wrap gap-3 justify-center">
+        {data.map((category:category) => (
+          <Categorysection key={category.mal_id} category={category} />
+        ))}
+    </section>
   )
 }
