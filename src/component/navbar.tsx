@@ -9,6 +9,7 @@ export default async function Navbar() {
     const response = await fetch('https://api.jikan.moe/v4/genres/anime')
 
     const datas: { mal_id: number, name: string }[] = (await response.json()).data
+    
 
 
     return (

@@ -11,7 +11,7 @@ export default function Videocontainer() {
  
 
     return (
-        <main className="w-[100vw] h-[calc(100vh-50px)] relative overflow-hidden md:mt-[50px] z-30">
+        <main className="w-[100vw] h-[calc(100vh-50px)] relative overflow-hidden md:mt-[50px] md:z-[-1] z-[30]">
             <Handlevideo randomNumber={randomNumber} />
 
             <div className='transparent-cover' >
